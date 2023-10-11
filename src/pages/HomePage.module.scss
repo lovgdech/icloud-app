@@ -1,0 +1,25 @@
+.wrapper {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 3rem;
+    }
+
+    >p {
+        text-align: center;
+        margin: 0 auto;
+        margin: 20px 0 50px;
+        font-size: 1.5rem;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
