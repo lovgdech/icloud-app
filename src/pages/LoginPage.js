@@ -77,7 +77,7 @@ function LoginPage() {
           </Button>
 
           <p className={cx("sub-title")}>
-            Don't have an account? <Link to="signup">Sign up</Link>
+            Don't have an account? <Link to="/signup">Sign up</Link>
           </p>
         </form>
       </div>

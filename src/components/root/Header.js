@@ -14,9 +14,6 @@ function Header() {
     setMenu((pre) => !pre);
   }
 
-  const loginHandler = () => {
-    navigate("/login");
-  };
   return (
     <header className={cx("wrapper")}>
       <button
@@ -88,11 +85,24 @@ function Header() {
             <NavLink to="#">Go Pro</NavLink>
           </li>
         </ul>
+        {!menu && (
+          <Button
+            className={cx("login-btn")}
+            onClick={() => navigate("/login")}
+          >
+            Log in
+          </Button>
+        )}
       </nav>
 
       <div className={cx("auth-btns")}>
-        <Button onClick={loginHandler}>Log in</Button>
-        <Button className={cx("signup-btn")}>Sign up</Button>
+        <Button onClick={() => navigate("/login")}>Log in</Button>
+        <Button
+          onClick={() => navigate("/signup")}
+          className={cx("signup-btn")}
+        >
+          Sign up
+        </Button>
       </div>
     </header>
   );

@@ -110,6 +110,10 @@ video {
 .submit-btn {
     background-color: var(--bg-btn) !important;
     color: white !important; 
+
+    &:hover {
+        background-color: var(--bg-btn-hover) !important;
+    }
 }
 
 .sub-title {
@@ -160,10 +164,15 @@ video {
     background-color: transparent;
     height: max-content;
     cursor: pointer;
+    transition: var(--transition);
 
     svg {
         height: 3rem !important;
         width: 3rem !important;
+    }
+
+    &:hover {
+        transform: scale(1.2);
     }
 }
 
